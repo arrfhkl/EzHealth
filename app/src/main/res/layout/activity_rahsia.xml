@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:label="@string/app_name"
     tools:context=".RahsiaActivity"
-    android:background="#00BCD4">
+    android:background="@drawable/bg_ga">
 
     <TextView
         android:id="@+id/textView3"
@@ -29,9 +29,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.012"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:background="@color/white"
+        />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView7"
         android:layout_width="120dp"
         android:layout_height="136dp"
@@ -41,21 +43,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.194"
-        tools:srcCompat="@drawable/profile_icon" />
+        android:background="@drawable/profile_icon"
+        android:onClick="userProfile"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView8"
         android:layout_width="150dp"
         android:layout_height="165dp"
+        android:onClick="mapActivity"
+        android:background="@drawable/map_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155"
-        tools:srcCompat="@drawable/map_icon" />
+        app:layout_constraintVertical_bias="0.155" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView10"
         android:layout_width="129dp"
         android:layout_height="155dp"
@@ -64,10 +68,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.613"
-        tools:srcCompat="@drawable/about_us" />
+        android:background="@drawable/about_us"
+        android:onClick="aboutUs"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/lgout_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGOUT"
@@ -93,6 +98,7 @@
         android:textSize="20dp"
         android:textAlignment="center"
         android:gravity="center"
+        android:background="@color/white"
         android:textColor="@color/black"/>
 
     <TextView
@@ -102,6 +108,7 @@
         android:text="LOCATION"
         android:textAlignment="center"
         android:gravity="center"
+        android:background="@color/white"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -125,6 +132,7 @@
         android:textSize="20dp"
         android:textAlignment="center"
         android:gravity="center"
+        android:background="@color/white"
         android:textColor="@color/black"/>
 
 

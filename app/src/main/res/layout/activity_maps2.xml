@@ -15,9 +15,8 @@
         android:baselineAligned="false"
         tools:context=".MapsActivity2" />
 
-
     <Button
-        android:id="@+id/B_hopistals"
+        android:id="@+id/btn_hsp"
         android:layout_width="382dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -26,4 +25,4 @@
         android:onClick="onClick"
         android:text="Hospitals" />
 
-    </RelativeLayout>
+</RelativeLayout>

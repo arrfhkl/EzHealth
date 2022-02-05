@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:theme="@style/AppTheme"
-    android:background="#00BCD4">
+    android:background="@drawable/bg_ga">
 
     <LinearLayout
         android:id="@+id/linear"
@@ -25,7 +25,9 @@
             android:text="Sign in to your account"
             android:textAlignment="center"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
 
         <EditText
@@ -36,7 +38,9 @@
             android:hint="Email"
             android:imeActionLabel="Email"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
 
         <EditText
@@ -48,7 +52,9 @@
             android:imeActionLabel="Password"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:soundEffectsEnabled="true" />
+            android:soundEffectsEnabled="true"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/signin_btn"

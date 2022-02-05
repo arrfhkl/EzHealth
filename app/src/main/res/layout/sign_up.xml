@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#00BCD4"
+    android:background="@drawable/bg_ga"
     tools:context=".SignUp">
 
     <LinearLayout
@@ -21,7 +21,9 @@
             android:text="Create New Account"
             android:textAlignment="center"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/username_reg"
@@ -30,7 +32,9 @@
             android:layout_marginTop="30dp"
             android:hint="Name"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/email_input_reg"
@@ -39,7 +43,9 @@
             android:layout_marginTop="20dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/pass_input_reg"
@@ -48,7 +54,9 @@
             android:layout_marginTop="15dp"
             android:hint="Pasword"
             android:inputType="textVisiblePassword"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/register_btn"
@@ -61,16 +69,5 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/already_account"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linear"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="30dp"
-        android:text="Already have a account ?"
-        android:textStyle="bold" />
 
 </RelativeLayout>
